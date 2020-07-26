@@ -9,3 +9,6 @@ jobs:
     steps:
       - name: Get Red Hat Version
         run: cat /etc/redhat-release
+      - name: Checkout code
+        uses: actions/checkout@v1
+
