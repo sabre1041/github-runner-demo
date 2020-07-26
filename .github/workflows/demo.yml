@@ -1,0 +1,11 @@
+name: demo
+
+on: [push, pull_request]
+
+jobs:
+
+  build:
+    runs-on: [self-hosted, linux]
+    steps:
+      - name: Get Red Hat Version
+        run: cat /etc/redhat-release
